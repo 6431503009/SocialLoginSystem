@@ -1,0 +1,84 @@
+/* ปรับการจัดวางเพื่อให้ข้อความอยู่ตรงกลาง */
+.todohome {
+	margin: 100px auto;
+	text-align: center;
+}
+
+.todohome h1 {
+	font-size: 3em;
+	font-weight: 400;
+	color: #333;
+	margin-bottom: 40px;
+}
+
+.todohome h2 {
+	font-size: 2em;
+	/* เปลี่ยนขนาดข้อความให้ใหญ่ขึ้น */
+	font-weight: 500;
+	/* เปลี่ยนน้ำหนักตัวหนังสือ */
+	color: #555;
+	margin-bottom: 40px;
+	/* เพิ่มระยะห่างด้านล่าง */
+	text-transform: uppercase;
+	/* ทำให้ข้อความเป็นตัวพิมพ์ใหญ่ทั้งหมด */
+	letter-spacing: 2px;
+	/* เพิ่มระยะห่างระหว่างตัวอักษร */
+}
+
+.button-group {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	/* เพิ่มระยะห่างด้านบนของปุ่ม */
+}
+
+.button {
+	padding: 15px 30px;
+	font-size: 1.2em;
+	/* เพิ่มขนาดข้อความปุ่ม */
+	font-weight: 600;
+	/* เปลี่ยนน้ำหนักตัวหนังสือ */
+	color: white;
+	border-radius: 30px;
+	background: linear-gradient(135deg, #2196F3, #1976D2);
+	margin: 0 10px;
+	text-decoration: none;
+	transition: transform 0.3s, box-shadow 0.3s;
+	animation: moveUpDown 1s infinite alternate;
+	/* เพิ่ม animation เป็น moveUpDown */
+}
+
+/* กำหนด keyframes สำหรับ animation */
+@keyframes moveUpDown {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-10px);
+		/* เลื่อนขึ้นลงเพื่อทำให้เคลื่อนไหว */
+	}
+}
+
+/* การปรับแต่งอื่นๆ */
+.info {
+	margin-top: 50px;
+	font-size: 0.8em;
+	color: #777;
+}
+
+.info p {
+	margin: 5px 0;
+}
+
+.button i {
+	margin-right: 5px;
+}
+
+.button.signin {
+	background: linear-gradient(135deg, #4CAF50, #388E3C);
+}
+
+.button.signup {
+	background: linear-gradient(135deg, #FFC107, #FF9800);
+}

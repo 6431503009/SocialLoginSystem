@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+	font-family: 'Fredoka One', cursive, sans-serif;
+}
+
+.prompt {
+	max-width: 400px;
+	margin: 50px auto;
+	padding: 25px;
+	background: #ffecea;
+	border: 5px dashed #ffb3c1;
+	border-radius: 20px;
+	font-family: 'Fredoka One', cursive;
+	color: #ff6b81;
+	box-shadow: 0 2px 8px rgba(255, 179, 193, 0.5);
+}
+
+button,
+a.button {
+	display: block;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button {
+	background: #ff9aa2;
+	box-shadow: 0 2px 4px rgba(255, 154, 162, 0.5);
+}
+
+button:hover {
+	background-color: #ffb3c1;
+}
+
+a.button {
+	background: #ffb3c1;
+	box-shadow: 0 2px 4px rgba(255, 179, 193, 0.5);
+}
+
+a.google {
+	background: #b3e2ff;
+	box-shadow: 0 2px 4px rgba(179, 226, 255, 0.5);
+}
+
+a.facebook {
+	background: #b39eff;
+	box-shadow: 0 2px 4px rgba(179, 158, 255, 0.5);
+}
+
+a.twitter {
+	background: #ffb3e6;
+	box-shadow: 0 2px 4px rgba(255, 179, 230, 0.5);
+}
+
+h1 {
+	margin: 0 0 20px 0;
+	padding: 0;
+	font-size: 32px;
+	text-align: center;
+	color: #ff6b81;
+	text-shadow: 2px 2px 0 #ffb3c1;
+}
+
+h3 {
+	margin-top: 0;
+	font-size: 24px;
+	text-align: center;
+	color: #ff9aa2;
+	text-shadow: 1px 1px 0 #ffb3c1;
+}
+
+form section {
+	margin: 0 0 20px 0;
+	position: relative;
+}
+
+label {
+	display: block;
+	margin: 0 0 3px 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ff9aa2;
+}
+
+input {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	background-color: #fff;
+	border: 3px solid #ffb3c1;
+	border-radius: 10px;
+	color: #ff6b81;
+	transition: border-color 0.3s ease;
+}
+
+input:focus {
+	outline: none;
+	border-color: #ff9aa2;
+}
+
+input[type=email]:not(:focus):invalid,
+input[type=password]:not(:focus):invalid {
+	color: #ff6b81;
+	border-color: #ff6b81;
+}
+
+hr {
+	border-top: 2px dashed #ffb3c1;
+	border-bottom: none;
+}
+
+p.instructions {
+	font-size: 14px;
+	font-weight: bold;
+	color: #ff9aa2;
+}
+
+p.help {
+	text-align: center;
+	font-weight: bold;
+	color: #ff9aa2;
+}
+
+.messages p {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #ff6b81;
+	padding-left: 30px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23ff6b81' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-alert-circle'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: left center;
+}
